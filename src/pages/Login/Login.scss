@@ -1,0 +1,53 @@
+.form {
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  padding: 90px 50px 20px 50px; 
+  transition: 0.3s;
+//   bottom: 0px;
+top: 0px;
+}
+
+.active-2 .signinForm {
+  left: -100%;
+  transition: 0.3s;
+}
+
+.signupForm {
+  left: 100%;
+  transition-delay: 0.25s;
+  transition: 0.3s;
+}
+
+.active-2 .signupForm {
+  left: 0px;
+  transition: 0.3s;
+}
+
+.inputStyle {
+    & input:valid + fieldset {
+      border: 2px solid #c7c7c7;
+    }
+  
+    & input:valid:focus + fieldset {
+      border: 2px solid #1a1a1a;
+    }
+  }
+  
+  .inputStyleError{
+    & input:valid + fieldset {
+      border: 2px solid #ff0000;
+    }
+  
+    & input:valid:focus + fieldset {
+      border: 2px solid #ff0000;
+    }
+    & input:valid:hover + fieldset {
+      border: 2px solid #ff0000;
+    }
+  }
+
+  .boxShadow{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+  
